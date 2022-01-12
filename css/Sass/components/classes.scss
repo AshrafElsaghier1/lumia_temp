@@ -1,0 +1,62 @@
+.h2{
+	position:relative;
+	margin: 30px auto 40px;
+	color: $textColor;
+	font-weight: 600;
+	font-size: 35px;
+	@media #{$mediaM}{
+		font-size: 32px;
+	}
+	@media #{$mediaS}{
+		font-size: 28px;
+	}
+
+	&:before{
+		position:absolute;
+		background-color:#ddd;
+		width: 130px;
+		height: 1px;
+		transform: translate(-50% , -33%);
+		bottom:-33%;
+		left: 50%;
+		content: '';
+	}
+	&:after{
+		position:absolute;
+		background-color:$mainColor;
+		width: 50px;
+		height: 3px;
+		transform: translate(-50% , -38%);
+		bottom:-38%;
+		left: 50%;
+		content: '';
+	}
+
+}
+.p{
+	
+		color: $textColor;
+		@media #{$mediaS}{
+			font-size: 15px;
+		}
+	
+}
+
+.h3{
+	font-style:unset;
+	font-size: 20px;
+	font-weight: 800;
+	color: #040404;
+	margin-bottom: 0px;
+	@media #{$mediaM}{
+		font-size: 18px;
+	}
+	@media #{$mediaS}{
+		font-size: 17px;
+	}
+}
+
+
+
+
+
